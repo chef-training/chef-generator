@@ -27,7 +27,6 @@ platforms:
       privileged: true
       pid_one_command: /bin/systemd
       volumes:
-        - /sys/fs/cgroup:/sys/fs/cgroup:ro # required by systemd
         - /sys/fs/selinux:/sys/fs/selinux:ro # required by systemd
 suites:
   - name: default
